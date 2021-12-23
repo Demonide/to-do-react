@@ -1,0 +1,17 @@
+const LOGIN = "LOGIN";
+const LOGOUT = "LOGOUT";
+const GET_LIST = "GET_LIST";
+const ADD_TODO = "ADD_TODO";
+const DELETE_TODO = "DELETE_TODO";
+const EDIT_TODO = 'EDIT_TODO';
+const TOGGLE_TODO = "TOGGLE_TODO";
+
+export {
+    LOGIN,
+    LOGOUT,
+    GET_LIST,
+    ADD_TODO,
+    DELETE_TODO,
+    EDIT_TODO,
+    TOGGLE_TODO
+}
