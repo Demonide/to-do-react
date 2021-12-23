@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToDo = () => {
+const ToDo = (props) => {
   return (
     <>
     toDo
