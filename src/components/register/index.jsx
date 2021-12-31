@@ -1,10 +1,8 @@
 import React, { useCallback, useState } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { fetchLogin } from "../../redux/fetch/login";
+import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
-
-const Login = () => {
+import { fetchRegister } from "../../redux/fetch/login";
+const Register = () => {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
@@ -16,7 +14,7 @@ const Login = () => {
     }
 
     const submit = useCallback(() => {
-        dispatch(fetchLogin(name, password));
+        dispatch(fetchRegister(name, password));
     }, [name, password]);
     
   return (
@@ -28,4 +26,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Register;
