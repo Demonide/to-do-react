@@ -11,8 +11,8 @@ const TodosList = (props) => {
     }, []);
 
     const renderFilms = useMemo(() => {
-        return films.map(el => {
-            return (<div>{el.title}</div>)
+        return films.map((el, index) => {
+            return (<div key={index} >{el.title}</div>)
         })
     }, [films])
 
